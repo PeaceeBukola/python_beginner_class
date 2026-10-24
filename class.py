@@ -30,9 +30,10 @@
 value1 = 6
 value2 = 8
 
-x = 7
+x = 67
 y = 13
 
+temp = 40
 
 def add (value1, x): #input(parameters), output, operation, name
     return value1 + x
@@ -43,3 +44,9 @@ def subtract (x, value2):
 
 print(add(value1, x))
 print(subtract(x, value2))
+
+
+if temp <= 38:
+    print ("You dont have fever")
+else:
+    print("You have a fever")
