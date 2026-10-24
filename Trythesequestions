@@ -1,0 +1,214 @@
+## Excercise 1: Warm up
+
+Scenario: I have ₦5,000 and want to go shopping, i need to know if i can afford everything i want to buy
+
+Help me:
+
+- Create variables for my budget, the price of a shirt, shoes, and transport
+- Create a function that accepts the budget and all three expenses
+- Calculate the total expenses
+- Return the money remaining
+- If i spend more than my budget, tell me how much extra i need
+- If i spend exactly my budget, tell me i have nothing left
+
+Test values:
+
+- Budget: ₦5,000
+- Shirt: ₦2,000
+- Shoes: ₦1,500
+- Transport: ₦500
+
+Expected result: I have ₦1,000 remaining
+
+Think deeper: What should happen if the Shirt costs ₦4,000 instead?
+
+
+
+## Excercise 2: The Mystery Number Detective
+
+Scenario: A game gives a player a secret number, The program must analyse the number and reveal its properties
+
+Your task:
+
+- Create a function that accepts a number
+- If the number is greater than 100, return `"Big number!"`
+- If it is less than 100, return `"Small number!"`
+- If it is exactly 100, return `"You found the target!"`
+
+Test values: 50, 100, and 150.
+
+Think deeper:
+
+- What happens when the number is zero?
+- What happens when the number is negative?
+- Can your function return both a message and the calculated results?
+
+Rule: You must use a function and `if/elif/else`, not write three separate programs
+
+
+
+## Excercise 3: Build a Mini Restaurant Billing System
+
+Scenario: A small restaurant needs a simple program to calculate a customer's bill
+
+Menu prices:
+
+- Rice: ₦2,000
+- Chicken: ₦1,500
+- Drink: ₦500
+
+Your task:
+
+1. Create a function that accepts the quantity of rice, chicken, and drinks
+2. Calculate the total bill using the menu prices
+3. Accept the customer's payment amount as another parameter
+4. If the payment is greater than the bill, calculate the change
+5. If the payment equals the bill, print `"Payment successful!"`
+6. If the payment is less than the bill, calculate how much the customer still owes
+
+Example test: 2 rice, 1 chicken, 2 drinks, payment of ₦7,000.
+
+Expected calculation: Total = ₦6,500; change = ₦500
+
+Think deeper: What if the customer orders zero drinks? Should the program still work?
+
+
+
+## Excercise 4: The School Result Analyzer
+
+Scenario: You are helping a lecturer create a program to grade medical students' examination scores
+
+Your task:
+
+- Create a function that accepts a student's name and score
+- Scores of 70–100 receive an A
+- Scores of 60–69 receive a B
+- Scores of 50–59 receive a C
+- Scores of 40–49 receive a D
+- Scores below 40 receive an F
+- Return a message containing the student's name, score, and grade
+- Reject scores below 0 or above 100 with an appropriate message
+
+Example: Name = Peace, score = 75.
+
+Expected result: `Peace scored 75 and received grade A.`
+
+Think deeper:
+
+- What happens when someone scores exactly 70?
+- Why does the order of your conditions matter?
+- What if the score is 105?
+
+Extra challenge: Add a second function that checks whether the student passed or failed
+
+
+
+
+## Exercise 5: The Mini Banking Assistant
+
+Scenario: You are building a simple banking assistant that helps a customer withdraw money
+
+Your task:
+
+- Create a function that accepts the account balance and withdrawal amount
+- If the withdrawal amount is zero or negative, return an invalid amount message
+- If the withdrawal amount is greater than the balance, reject the transaction
+- Otherwise, subtract the withdrawal amount from the balance
+- Return the updated balance and a transaction message
+
+Example: Balance = ₦20,000; withdrawal = ₦7,500
+
+Expected result: New balance = ₦12,500
+
+Think deeper:
+
+- What happens when the withdrawal equals the balance?
+- Should a customer be allowed to withdraw ₦0?
+- Why should the original balance not be reduced when a transaction is rejected?
+
+Extra challenge: Write another function that accepts a deposit amount and returns the new balance
+
+
+
+## Exercise 6: The Space Mission Decision System
+
+Scenario: An astronaut must decide whether a spaceship is safe to launch.
+
+Requirements:
+
+- The spaceship needs at least 80% fuel
+- The astronaut must have enough oxygen, represented by at least 50 units
+- The spaceship must have no critical system fault
+- Create a function that accepts all three values
+- Use conditions to determine whether the mission can launch
+- Return a clear explanation of why the launch is approved or rejected
+
+Test cases:
+
+- Fuel = 90, oxygen = 70, fault = `False` → launch approved.
+- Fuel = 60, oxygen = 70, fault = `False` → launch rejected.
+- Fuel = 90, oxygen = 30, fault = `False` → launch rejected.
+- Fuel = 90, oxygen = 70, fault = `True` → launch rejected.
+
+Think deeper: If both fuel and oxygen are insufficient, how can you tell the astronaut about both problems instead of only one?
+
+This introduces the idea of combining conditions with `and` and `or`, if you've covered them.
+
+
+
+## Exercise 7: The Personal Productivity Coach
+
+Scenario: Create a program that tells a student how to manage her day based on the number of hours she has available
+
+Your task:
+
+- Create a function that accepts the student's name, available hours, study hours, and sleep hours
+- Calculate how many hours remain for other activities
+- If study hours exceed available hours, return an error message
+- If sleep hours are less than 7, warn the student that she may not be getting enough sleep
+- If no hours remain after study and sleep, explain that her schedule is fully occupied
+- Otherwise, tell her how many free hours she has
+
+Example: Available = 24, study = 6, sleep = 8
+
+Expected result: 10 hours remain for other activities
+
+Think deeper:
+
+- What if the student enters negative study hours?
+- What if study hours plus sleep hours exceed 24?
+- How can you avoid repeating the same calculations in different places?
+
+
+
+# Exercise 8: The Smart ATM Challenge
+
+Hello Peace Alemede, my name is Jason from paystack, I am pleased to inform you that you have been hired as a Junior Python dev, your first task is to build us a basic ATM program, this is to test your ability to turn a real-world problem into a working Python solution.
+
+Your program must be organised into functions, use variables properly, perform calculations, and make decisions."
+
+1. Create variables for a customer's name, PIN, and account balance
+2. Create a function that accepts the customer's name and balance and returns a welcome message
+3. Create a function that checks whether an entered PIN matches the correct PIN
+4. Create a withdrawal function that accepts the balance and withdrawal amount
+5. Reject incorrect PINs, zero or negative withdrawals, and withdrawals exceeding the balance
+6. Calculate the new balance only when the transaction is valid
+7. Return a clear transaction message and the updated balance
+
+## Test cases
+
+| Scenario                                        | Expected behaviour        |
+| ----------------------------------------------- | ------------------------- |
+| Correct PIN, balance ₦10,000, withdrawal ₦3,000 | Success; balance ₦7,000   |
+| Incorrect PIN                                   | Reject transaction        |
+| Withdrawal of ₦15,000 from ₦10,000              | Reject; balance unchanged |
+| Withdrawal of ₦0                                | Reject invalid amount     |
+| Withdrawal of -₦500                             | Reject invalid amount     |
+| Withdrawal of ₦10,000 from ₦10,000              | Success; balance ₦0       |
+
+Bonus challenge: Allow the customer to choose between checking their balance, withdrawing money, and depositing money, you can use `if/elif/else` to handle the choices. 
+
+If your tutor have not taught lists or loops yet, you can simply call each function separately for now, those topics will be treated at the next standup meeting
+
+Important: This is a learning simulation, not a real banking security system
+A PIN stored directly in a Python variable is not secure for real banking
