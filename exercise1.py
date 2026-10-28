@@ -25,7 +25,7 @@
 
 # budget = 5000
 # shirt = 2000
-# shoes = 1500
+# shoes = 1500 
 # transport = 500
 
 # def expenses(budget, shirt, shoes, transport):
@@ -44,18 +44,45 @@
 # print (shopping_funds())
 
 
+# budget = 5000
+# shirt = 4000
+# shoes = 1500
+# transport = 500
+
+# def shopping_funds():
+#     total_spent = (shirt + shoes + transport)
+
+#     remaining = budget - total_spent
+#     if remaining > 0 :
+#         return remaining, "naira spare"
+#     else:
+#         return abs(remaining), "extra needed"
+
+# print (shopping_funds())
+
+
+ 
+
 budget = 5000
 shirt = 4000
-shoes = 1500
+shoes = 1500 
 transport = 500
+
+def expenses(budget, shirt, shoes, transport):
+    return (budget - (shirt + shoes + transport))
+
+print(expenses(budget, shirt, shoes, transport))
 
 def shopping_funds():
     total_spent = (shirt + shoes + transport)
+    if  total_spent > 5000:
+        print (((budget - total_spent), "extra-needed"))
 
-    remaining = budget - total_spent
-    if remaining > 0 :
-        return remaining, "naira spare"
-    else:
-        return abs(remaining), "extra needed"
+    elif total_spent == budget:
+        print ("you have nothing left")
 
-print (shopping_funds())
+    elif total_spent < 5000:
+        print ((abs(budget - total_spent), "remaining"))
+
+print(shopping_funds())
+
