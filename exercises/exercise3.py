@@ -40,7 +40,7 @@ def payment(customer_px):
     menu_total = (rice*2 + chicken + drink*2)
     change = customer_px - menu_total
     if customer_px > menu_total:
-        return change, "chnge left"
+        return change, "change left"
 
     elif customer_px == menu_total:
         return "payment successful"
