@@ -28,7 +28,7 @@ withdrawal = 7500
 
 
 def statement(balance, withdrawal):
-    return f"Balance = {balance}, Withdrawal = {withdrawal} "
+    return f"Balance = {balance}, Withdrawal = {withdrawal} "  #what will happen if this function doesnt exixt
 
 def new_balance(balance, withdrawal): 
     new_statement = int(balance - withdrawal) 
@@ -51,3 +51,5 @@ def deposited_balance(balance, deposit):
     new_total = deposit + balance
     return "your total funds is", new_total
 print(deposited_balance(balance, deposit))
+
+#re explain what you understand about this question and why you did it that way

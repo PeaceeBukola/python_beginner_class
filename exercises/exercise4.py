@@ -28,11 +28,11 @@
 
 
 
-Name = any
+Name = any  #string or ?
 Score = 64
 
 def info(Name, Score):
-    return (f"your name is {Name} you scored {Score}.")
+    return (f"your name is {Name} you scored {Score}.") #is the grade returned?
 
 print(info(Name, Score))
 
@@ -54,9 +54,11 @@ def grades(Name, Score):
             return f"{Name} recieved {Score} and recieved an F grade"
 
         elif Score == 0 and Score > 100 :
-            return "grade unapplicable"
+            return "grade unapplicable"       #there seems to be a need for nested function here, at the end of elif there should be else
 
-print(grades(Name, Score))
+print(grades(Name, Score)) 
+
+#How did you return a message containing the student's name, score, and grade
 
             
 

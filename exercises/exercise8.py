@@ -66,3 +66,9 @@ def withdraw_metric(withdrawal, Balance):
 
 
 print(withdraw_metric(withdrawal, Balance))
+
+
+
+
+
+#not fully inderstood also, and system thinking was not really done

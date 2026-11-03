@@ -25,9 +25,9 @@ secret_no = int(input("what is your number: " ))
 
 def no_detector(secret_no):
     if secret_no > 100:
-        print ("Big number")
+        print ("Big number") #never use print inside function, correct it
 
-    elif secret_no < 100 and secret_no > 0:
+    elif secret_no < 100 and secret_no > 0: #what actually happens when the number is 0
         print ("small number") 
 
     elif secret_no == 100:

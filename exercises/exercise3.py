@@ -24,6 +24,7 @@
 # Think deeper: What if the customer orders zero drinks? Should the program still work?
 
 
+#why hardcode the values of foods stuff?, why not accept all of them from the user and use
 
 rice = 2000
 chicken = 1500
@@ -37,15 +38,15 @@ print(menu(rice, chicken, drink))
 customer_px = int(input("amout_paid: "))
 
 def payment(customer_px):
-    menu_total = (rice*2 + chicken + drink*2)
+    menu_total = (rice*2 + chicken + drink*2) #lets say the customer is listing the ammount they want to buy by themselves, instead of hardcoding the numbers, try it out
     change = customer_px - menu_total
-    if customer_px > menu_total:
+    if customer_px > menu_total:  #why not use if change > 0 || < since you already have change
         return change, "change left"
 
     elif customer_px == menu_total:
         return "payment successful"
 
     elif customer_px < menu_total:
-        return  abs(change), "is left to blnce"
-    
+        return  abs(change), "is left to blnce"  #whats the use of abs
+    #your printout is printing as strings
 print(payment(customer_px))
